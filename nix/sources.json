@@ -1,0 +1,50 @@
+{
+    "cardano-node": {
+        "branch": "refs/tags/1.26.1",
+        "description": "The core component that is used to participate in a Cardano decentralised blockchain.",
+        "homepage": "https://cardano.org",
+        "owner": "input-output-hk",
+        "repo": "cardano-node",
+        "rev": "62f38470098fc65e7de5a4b91e21e36ac30799f3",
+        "sha256": "0ws2lgpl88p6bbrim43dczm19an9nba97sr483abq32b1xh4m3qh",
+        "type": "tarball",
+        "url": "https://github.com/input-output-hk/cardano-node/archive/62f38470098fc65e7de5a4b91e21e36ac30799f3.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "cardano-wallet": {
+        "branch": "refs/tags/v2021-03-04",
+        "description": "HTTP server & command-line for managing UTxOs and HD wallets in Cardano.",
+        "homepage": "",
+        "owner": "input-output-hk",
+        "repo": "cardano-wallet",
+        "rev": "f4d697a2c8f1df3acba578d9554508896d331b8d",
+        "sha256": "07awzp8ifgkh966qirlmr8igbx8hx5nlaw3zgflnic3lqc8672sc",
+        "type": "tarball",
+        "url": "https://github.com/input-output-hk/cardano-wallet/archive/f4d697a2c8f1df3acba578d9554508896d331b8d.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "niv": {
+        "branch": "nixpkgs-unstable",
+        "description": "Nix Packages collection",
+        "homepage": "",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "9e0a3e5a645eca0fa383f5577ef12fbfa985a92d",
+        "sha256": "1c3ayrl4l66wdgzzsi68vkk2pqnv8a66pjnkq3vp84lflggsrxzf",
+        "type": "tarball",
+        "url": "https://github.com/NixOS/nixpkgs/archive/9e0a3e5a645eca0fa383f5577ef12fbfa985a92d.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nixpkgs": {
+        "branch": "nixos-20.09",
+        "description": "Nix Packages collection",
+        "homepage": "",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "06b11191834abae2b9ccace27818b74fe5a4b293",
+        "sha256": "05vdg6q738snaipj6bxwvmbm4j6fdpn1s8fc1k3wvlvyks87jz27",
+        "type": "tarball",
+        "url": "https://github.com/NixOS/nixpkgs/archive/06b11191834abae2b9ccace27818b74fe5a4b293.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    }
+}

@@ -1,0 +1,58 @@
+name: defrag-ops-ci
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "**" ]
+jobs:
+  black:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+      - name: Nix
+        uses: cachix/install-nix-action@v12
+      - name: Black
+        run: |
+          nix-shell ./shell-ci.nix --run "black --check ."
+  flake8:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+      - name: Nix
+        uses: cachix/install-nix-action@v12
+      - name: Flake8
+        run: |
+          nix-shell ./shell-ci.nix --run "flake8 defrag-ops.py"
+  mypy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+      - name: Nix
+        uses: cachix/install-nix-action@v12
+      - name: Mypy
+        run: |
+          nix-shell ./shell-ci.nix --run "mypy defrag-ops.py"
+  nixfmt:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+      - name: Nix
+        uses: cachix/install-nix-action@v12
+      - name: Nixfmt
+        run: |
+          nix-shell ./shell-ci.nix --run "find . -iname \"*.nix\" | xargs -I{} nixfmt -c {}"
+
+  shellcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+      - name: Nix
+        uses: cachix/install-nix-action@v12
+      - name: Shellcheck
+        run: |
+          nix-shell ./shell-ci.nix --run "find . -iname \"*.sh\" | xargs -I{} shellcheck {}"
