@@ -17,10 +17,10 @@
 * defrag-ops.py requires the following software to be installed and available from the system path at the versions indicated:
   * python3 and python3 library dependencies (tested at python 3.8)
   * bash (>= 4.4.0)
-  * [cardano-cli](https://github.com/input-output-hk/cardano-node/tree/master/cardano-cli) (part of cardano-node, tags: 1.26.1)
+  * [cardano-cli](https://github.com/input-output-hk/cardano-node/tree/master/cardano-cli) (part of cardano-node, tags: 1.26.1, 1.26.2)
   * [cardano-addresses](https://github.com/input-output-hk/cardano-addresses) (tags: 3.2.0)
   * [cardano-wallet](https://github.com/input-output-hk/cardano-wallet) server (tags: v2021-03-04)
-  * [cardano-node](https://github.com/input-output-hk/cardano-node) (tags: 1.26.1)
+  * [cardano-node](https://github.com/input-output-hk/cardano-node) (tags: 1.26.1, 1.26.2)
 * If the Cardano software is installed and available from the system path, but not at the above indicated versioning, defrag-ops will display a `WARNING`.
 
 * Cardano-node and cardano-wallet must be run as servers and connected to the network that the wallet to fragment or defragment is part of.
