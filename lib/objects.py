@@ -11,6 +11,7 @@ class OpsState:
         "3.2.0": "115174cc451d3fc6b90ce61782f841e51f271c3d"
     }
     ACCEPT_CARDANO_CLI_VER: Dict[str, str] = {
+        "1.26.2": "3531289c9f79eab7ac5d3272ce6e6821504fec4c",
         "1.26.1": "62f38470098fc65e7de5a4b91e21e36ac30799f3"
     }
     ACCEPT_CARDANO_WALLET_VER: Dict[str, str] = {
